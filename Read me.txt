@@ -1,0 +1,44 @@
+Cluster-system
+author:caiwei
+date:10/06/2020
+
+
+Statement£º
+------------------------------------------------
+This project uses the open data of COVID-19 compiled by users on GitHub according to the data team of Johns Hopkins University Center for Systems Science and Engineering. Data can be downloaded from: https://github.com/datasets/covid-19; https://datahub.io/core/covid-19#data
+We used this data to calculate the daily growth rate. See the file:countries-aggregated_xls_1006.xls
+------------------------------------------------
+
+
+Contents£º
+------------------------------------------------
+1. countries-aggregated_xls_1006.xls
+
+Data used in calculation. 
+Because the name in pyecharts is inconsistent with the name in the original data, we made a few modifications in the data file and discarded the infection data on board.
+
+************************************************
+2. error_heatmap_1006.py
+
+Using this program, we can plot the division of growth rate family-systems from 1/22/2020 to 9/2/2020.
+
+************************************************
+3. Heat maps for family-systems division of growth rate1006.py
+
+Using this program, we can get three kinds of error analysis heat maps of cluster-system prediction.
+
+************************************************
+4. Heat maps for family-systems division of growth rate.html
+The area that is always gray is because there is no data in the original data.
+
+************************************************
+5. Absolute error_heatmap_1006.html
+Absolute error is the absolute value of the difference between true value and predicted value.
+
+************************************************
+6. Relative error_heatmap_1006.html
+Relative error is the absolute error divided by true value, and expressed as a percentage. If the true value is zero, the absolute error is divided by 1.
+
+************************************************
+7. Fiducial error_heatmap_1006.html
+The fiducial is the absolute error divided by 181( theoretical maximum of truth value).
